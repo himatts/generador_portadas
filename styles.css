@@ -1,0 +1,114 @@
+/* estilos.css */
+body {
+    font-family: 'IBM Plex Mono';
+    background-color: #1a1a1a; /* Fondo oscuro para la aplicación */
+    color: #F2F2F2; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    text-align: center; /* Alinea todo el texto al centro */
+    width: 100%;
+    max-width: 500px; /* Máximo ancho del contenedor principal */
+}
+
+.title {
+    font-size: 2em; /* Tamaño grande para el título */
+    margin: 0.67em 0;
+}
+
+.color-picker {
+    width: 80px; /* Asegura un aspecto cuadrado que se volverá circular */
+    height: 80px; /* Mismo alto y ancho para una forma perfectamente circular */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+    background: #111111; /* Elimina cualquier fondo por defecto en algunos navegadores */
+    margin: 10px 30px 30px; /* Espacio a los lados para evitar que los pickers se toquen */
+}
+
+.text-input {
+    font-family: 'IBM Plex Mono';
+    width: 100%; /* Utilizará el 100% del ancho de su contenedor */
+    height: 281.25px; /* Alto fijo del cuadro de texto */
+    padding: 58px 65px 10px 65px; /* Top, Right, Bottom, Left */
+    font-size: 36.46px; /* Basado en la proporción de la fuente en el canvas */
+    font-weight: 500; /* Peso de la fuente 'Medium' */
+    line-height: 1.2; /* Basado en la proporción del line-height en el canvas */
+    background-image: 
+        radial-gradient(circle at 100% 100%, var(--color3) 0%, transparent 75%),
+        linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
+    --color1: #03001e; /* Color inicial por defecto para el gradiente lineal */
+    --color2: #7303c0; /* Segundo color para el gradiente lineal */
+    --color3: #ec38bc; /* Color inicial por defecto para el gradiente radial */
+    color: #F2F2F2; /* Texto claro */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* El ancho y alto incluyen el contenido, padding y border */
+    margin-bottom: 20px; /* Espacio debajo del área de texto */
+    resize: none; /* Deshabilitar el redimensionamiento */
+}
+
+#texto::placeholder {
+    color: #F2F2F2;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.button {
+    font-family: 'IBM Plex Mono';
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #F2F2F2; /* Borde rojo sólido */
+    border-radius: 2px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0); /* Fondo negro con 50% de transparencia */
+    color: #F2F2F2; /* Texto en color blanco para contraste */
+    cursor: pointer; /* Cambia el cursor a tipo pointer para indicar interactividad */
+    font-size: 1em;
+}
+
+
+
+.button:hover {
+    background-color: #555; /* Fondo más claro en hover */
+}
+
+#svg-container {
+    width: 100%; /* El contenedor utilizará el 100% del ancho disponible, hasta 500px debido a max-width */
+    margin: 20px auto; /* Centra el contenedor en la pantalla */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido de flexbox */
+    align-items: center; /* Centra verticalmente el contenido de flexbox */
+    max-width: 500px; /* Máximo ancho del contenedor */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+/* Ajusta el SVG para que sea responsivo dentro de su contenedor */
+svg {
+    max-width: 100%; /* Asegura que el SVG no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción del SVG */
+    display: block; /* Elimina espacio extra debajo del SVG */
+    margin: auto; /* Centra el SVG si es más pequeño que su contenedor */
+}
+
+.color-combination-container {
+    margin: 20px 0;
+}
+
+#color-combination {
+    font-family: 'IBM Plex Mono';
+    font-size: medium;
+    margin: 20px 20px 20px 20px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #F2F2F2;
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Portadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="app">
+        <h1 class="title">Generador de Portadas</h1>
+
+        <div class="color-picker-container">
+            <label for="color-combination">Escoge una combinación de colores:</label>
+            <select id="color-combination"></select>
+        </div>
+        
+        
+        <div class="color-picker-container">
+            <input type="color" id="color1" class="color-picker" value="#03001e">
+            <input type="color" id="color2" class="color-picker" value="#7303c0">
+            <input type="color" id="color3" class="color-picker" value="#ec38bc"> <!-- Nuevo color picker para el gradiente radial -->
+        </div>        
+      
+
+        <textarea id="texto" class="text-input" placeholder="/escribe_nombre_de_portada" ></textarea>
+        <div class="button-container">
+            <button class="button" id="descargarImagen">Descargar</button>
+        </div>
+        <div id="svg-container" class="svg-container"></div>
+    </div>    
+    
+    <script src="./js/generador.js"></script>
+</body>
+</html>
