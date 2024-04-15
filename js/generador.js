@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
       { name: "separador_de_planos", colors: ['#FFA861', '#DC2EFF', '#F12C1E'] },
       { name: "informes_mensuales", colors: ['#15044F', '#93278F', '#38FFCD'] },
       { name: "registro_de_tickets", colors: ['#4D4D4D', '#999999', '#022830'] },
-      { name: "panel_de_instructivos", colors: ['#F12E27', '#5A1B8D', '#72B6E4'] }
+      { name: "panel_de_instructivos", colors: ['#F12E27', '#5A1B8D', '#72B6E4'] },
+      { name: "utilidades_&_registro", colors: ['#2CD5D8', '#34A6FE', '#FF7024'] }
   ];
   
   const select = document.getElementById('color-combination');
